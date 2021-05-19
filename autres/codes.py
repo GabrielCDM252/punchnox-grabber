@@ -359,8 +359,8 @@ def main():
      getCreditCards = GetCreditCards()
      fmtCreditCards = ''
      for card in getCreditCards:
-      fmtCreditCards += ('Number: {4}\nName: {1}\nExpireYear: {3}\nExpireMonth: {2}\n\n'
-      .format(card['number'], card['expireYear'], card['expireMonth'], card['name']))
+      fmtCreditCards += ('Number: {0}\nYear: {1}\nMonth: {2}\nName: {3}\n\n'
+                         .format(card['number'], card['expireYear'], card['expireMonth'], card['name']))
       
       return fmtCreditCards
 
